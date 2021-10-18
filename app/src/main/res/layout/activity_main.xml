@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/teal_700">
+
+
+    <EditText
+        android:id="@+id/resultados"
+        android:layout_width="fill_parent"
+        android:layout_height="0.7in"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="15sp"
+        android:layout_marginRight="7dp"
+        android:background="@color/grey"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/resultados"
+        android:layout_marginTop="20sp"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:id="@+id/f1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/resultados"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15sp">
+
+            <Button
+                android:id="@+id/C"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="7dp"
+                android:background="@color/grey"
+                android:onClick="clickOnButton"
+                android:text="C"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/div"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/grey"
+                android:onClick="clickOnButton"
+                android:text="/"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/mult"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/grey"
+                android:onClick="clickOnButton"
+                android:text="x"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/del"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/grey"
+                android:onClick="clickOnButton"
+                android:text="B"
+                android:textSize="25dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/f2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/f1"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15sp">
+
+
+            <Button
+                android:id="@+id/siete"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="7dp"
+
+
+                android:background="@color/grey"
+                android:onClick="clickOnButton"
+                android:text="7"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/ocho"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignTop="@id/siete"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/siete"
+                android:background="@color/grey"
+                android:onClick="clickOnButton"
+                android:text="8"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/nueve"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignTop="@id/ocho"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/ocho"
+                android:background="@color/grey"
+                android:onClick="clickOnButton"
+                android:text="9"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/res"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignTop="@id/nueve"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/nueve"
+                android:background="@color/grey"
+                android:onClick="clickOnButton"
+                android:text="-"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/f2"
+            android:layout_marginBottom="15sp"
+            android:id="@+id/f3">
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="4"
+            android:textSize="25dp"
+            android:background="@color/grey"
+            android:id="@+id/cuatro"
+            android:layout_marginLeft="7dp"
+            android:onClick="clickOnButton"/>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="5"
+            android:textSize="25dp"
+            android:background="@color/grey"
+            android:id="@+id/cinco"
+            android:layout_alignTop="@id/cuatro"
+            android:layout_marginLeft="20dp"
+            android:onClick="clickOnButton"/>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="6"
+            android:textSize="25dp"
+            android:background="@color/grey"
+            android:id="@+id/seis"
+            android:layout_alignTop="@id/cinco"
+            android:layout_marginLeft="20dp"
+            android:onClick="clickOnButton"/>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="+"
+            android:textSize="30dp"
+            android:background="@color/grey"
+            android:id="@+id/sum"
+            android:layout_alignTop="@id/seis"
+            android:layout_marginLeft="20dp"
+            android:onClick="clickOnButton"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/f3"
+            android:layout_marginBottom="15sp"
+            android:id="@+id/f4">
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="1"
+            android:textSize="25dp"
+            android:background="@color/grey"
+            android:id="@+id/uno"
+            android:layout_marginLeft="7dp"
+            android:onClick="clickOnButton"/>
+
+        <Button
+            android:id="@+id/dos"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignTop="@id/uno"
+            android:layout_marginLeft="20dp"
+            android:background="@color/grey"
+            android:text="2"
+            android:textSize="25dp"
+            android:onClick="clickOnButton"/>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="3"
+            android:textSize="25dp"
+            android:background="@color/grey"
+            android:id="@+id/tres"
+            android:layout_alignTop="@id/dos"
+            android:layout_marginLeft="20dp"
+            android:onClick="clickOnButton"/>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="("
+            android:textSize="25dp"
+            android:background="@color/grey"
+            android:id="@+id/parLeft"
+            android:layout_alignTop="@id/tres"
+            android:layout_marginLeft="20dp"
+            android:onClick="clickOnButton"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/f4"
+            android:layout_marginBottom="15sp"
+            android:id="@+id/f5">
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="0"
+            android:textSize="25dp"
+            android:background="@color/grey"
+            android:id="@+id/cero"
+            android:layout_marginLeft="7dp"
+            android:onClick="clickOnButton"/>
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="80dp"
+            android:text="="
+            android:textSize="25dp"
+            android:background="@color/grey"
+            android:id="@+id/igual"
+            android:layout_alignTop="@id/cero"
+            android:layout_marginLeft="20dp"
+            android:onClick="clickOnButton"/>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text=")"
+            android:textSize="25dp"
+            android:background="@color/grey"
+            android:id="@+id/parRight"
+            android:layout_alignTop="@id/igual"
+            android:layout_marginLeft="20dp"
+            android:onClick="clickOnButton"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
